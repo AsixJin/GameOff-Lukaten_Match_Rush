@@ -1,26 +1,30 @@
 local sti = require "libs/sti"
+local displayText = "This is the text to display."
 
 function love.load()
     -- Load map file
     map = sti("maps/debug.lua")
     -- Load Message Box Image
     msgBox = love.graphics.newImage("graphics/msgBox.png")
-    -- Load font
+    -- Load and set font
     font = love.graphics.newImageFont("graphics/font2.png", " abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.,!?-+/():;%&`_*#=[]'{}", 0)
     font:setLineHeight(.6)
     love.graphics.setFont(font, 32)
+
+
 end
 
 function love.update(dt)
-    -- Update world
+    -- Update Map
     map:update(dt)
 end
 
 function love.draw()
-    -- Draw world
+    -- Draw Map
     map:draw()
     -- Draw Message Box
     love.graphics.draw(msgBox, 0, 320)
-    -- Write some text
-    love.graphics.print("I am Asix Jin!", 20, 335)
+
+    -- Write Current Text
+    love.graphics.print(displayText, 20, 335)
 end
