@@ -1,19 +1,45 @@
 return {
   version = "1.1",
   luaversion = "5.1",
-  tiledversion = "1.0.2",
+  tiledversion = "1.0.3",
   orientation = "orthogonal",
   renderorder = "right-down",
   width = 10,
   height = 10,
   tilewidth = 32,
   tileheight = 32,
-  nextobjectid = 1,
+  nextobjectid = 3,
   properties = {},
   tilesets = {
     {
-      name = "Tileset",
+      name = "grass",
       firstgid = 1,
+      filename = "../tiled/tilesets/grass.tsx",
+      tilewidth = 32,
+      tileheight = 32,
+      spacing = 0,
+      margin = 0,
+      image = "../graphics/tilesets/auto/grass_auto.png",
+      imagewidth = 64,
+      imageheight = 96,
+      transparentcolor = "#86b971",
+      tileoffset = {
+        x = 0,
+        y = 0
+      },
+      grid = {
+        orientation = "orthogonal",
+        width = 32,
+        height = 32
+      },
+      properties = {},
+      terrains = {},
+      tilecount = 6,
+      tiles = {}
+    },
+    {
+      name = "Tileset",
+      firstgid = 7,
       filename = "../tiled/tilesets/water.tsx",
       tilewidth = 32,
       tileheight = 32,
@@ -38,16 +64,16 @@ return {
       tiles = {}
     },
     {
-      name = "grass",
-      firstgid = 49,
-      filename = "../tiled/tilesets/grass.tsx",
+      name = "Building 1",
+      firstgid = 55,
+      filename = "../tiled/tilesets/building1.tsx",
       tilewidth = 32,
       tileheight = 32,
       spacing = 0,
       margin = 0,
-      image = "../graphics/tilesets/auto/grass_auto.png",
-      imagewidth = 64,
-      imageheight = 96,
+      image = "../graphics/tilesets/building1.png",
+      imagewidth = 96,
+      imageheight = 128,
       transparentcolor = "#86b971",
       tileoffset = {
         x = 0,
@@ -60,8 +86,261 @@ return {
       },
       properties = {},
       terrains = {},
-      tilecount = 6,
-      tiles = {}
+      tilecount = 12,
+      tiles = {
+        {
+          id = 3,
+          objectGroup = {
+            type = "objectgroup",
+            name = "",
+            visible = true,
+            opacity = 1,
+            offsetx = 0,
+            offsety = 0,
+            draworder = "index",
+            properties = {},
+            objects = {
+              {
+                id = 1,
+                name = "",
+                type = "",
+                shape = "rectangle",
+                x = 0,
+                y = 0,
+                width = 32,
+                height = 32,
+                rotation = 0,
+                visible = true,
+                properties = {}
+              }
+            }
+          }
+        },
+        {
+          id = 4,
+          objectGroup = {
+            type = "objectgroup",
+            name = "",
+            visible = true,
+            opacity = 1,
+            offsetx = 0,
+            offsety = 0,
+            draworder = "index",
+            properties = {},
+            objects = {
+              {
+                id = 1,
+                name = "",
+                type = "",
+                shape = "rectangle",
+                x = 0,
+                y = 0,
+                width = 32,
+                height = 32,
+                rotation = 0,
+                visible = true,
+                properties = {}
+              }
+            }
+          }
+        },
+        {
+          id = 5,
+          objectGroup = {
+            type = "objectgroup",
+            name = "",
+            visible = true,
+            opacity = 1,
+            offsetx = 0,
+            offsety = 0,
+            draworder = "index",
+            properties = {},
+            objects = {
+              {
+                id = 1,
+                name = "",
+                type = "",
+                shape = "rectangle",
+                x = 0,
+                y = 0,
+                width = 32,
+                height = 32,
+                rotation = 0,
+                visible = true,
+                properties = {}
+              }
+            }
+          }
+        },
+        {
+          id = 6,
+          objectGroup = {
+            type = "objectgroup",
+            name = "",
+            visible = true,
+            opacity = 1,
+            offsetx = 0,
+            offsety = 0,
+            draworder = "index",
+            properties = {},
+            objects = {
+              {
+                id = 1,
+                name = "",
+                type = "",
+                shape = "rectangle",
+                x = 0,
+                y = 0,
+                width = 32,
+                height = 32,
+                rotation = 0,
+                visible = true,
+                properties = {}
+              }
+            }
+          }
+        },
+        {
+          id = 7,
+          objectGroup = {
+            type = "objectgroup",
+            name = "",
+            visible = true,
+            opacity = 1,
+            offsetx = 0,
+            offsety = 0,
+            draworder = "index",
+            properties = {},
+            objects = {
+              {
+                id = 1,
+                name = "",
+                type = "",
+                shape = "rectangle",
+                x = 0,
+                y = 0,
+                width = 32,
+                height = 32,
+                rotation = 0,
+                visible = true,
+                properties = {}
+              }
+            }
+          }
+        },
+        {
+          id = 8,
+          objectGroup = {
+            type = "objectgroup",
+            name = "",
+            visible = true,
+            opacity = 1,
+            offsetx = 0,
+            offsety = 0,
+            draworder = "index",
+            properties = {},
+            objects = {
+              {
+                id = 1,
+                name = "",
+                type = "",
+                shape = "rectangle",
+                x = 0,
+                y = 0,
+                width = 32,
+                height = 32,
+                rotation = 0,
+                visible = true,
+                properties = {}
+              }
+            }
+          }
+        },
+        {
+          id = 9,
+          objectGroup = {
+            type = "objectgroup",
+            name = "",
+            visible = true,
+            opacity = 1,
+            offsetx = 0,
+            offsety = 0,
+            draworder = "index",
+            properties = {},
+            objects = {
+              {
+                id = 1,
+                name = "",
+                type = "",
+                shape = "rectangle",
+                x = 0,
+                y = 0,
+                width = 32,
+                height = 32,
+                rotation = 0,
+                visible = true,
+                properties = {}
+              }
+            }
+          }
+        },
+        {
+          id = 10,
+          objectGroup = {
+            type = "objectgroup",
+            name = "",
+            visible = true,
+            opacity = 1,
+            offsetx = 0,
+            offsety = 0,
+            draworder = "index",
+            properties = {},
+            objects = {
+              {
+                id = 1,
+                name = "",
+                type = "",
+                shape = "rectangle",
+                x = 0,
+                y = 0,
+                width = 32,
+                height = 32,
+                rotation = 0,
+                visible = true,
+                properties = {}
+              }
+            }
+          }
+        },
+        {
+          id = 11,
+          objectGroup = {
+            type = "objectgroup",
+            name = "",
+            visible = true,
+            opacity = 1,
+            offsetx = 0,
+            offsety = 0,
+            draworder = "index",
+            properties = {},
+            objects = {
+              {
+                id = 1,
+                name = "",
+                type = "",
+                shape = "rectangle",
+                x = 0,
+                y = 0,
+                width = 32,
+                height = 32,
+                rotation = 0,
+                visible = true,
+                properties = {}
+              }
+            }
+          }
+        }
+      }
     }
   },
   layers = {
@@ -79,16 +358,67 @@ return {
       properties = {},
       encoding = "lua",
       data = {
-        49, 49, 49, 49, 49, 49, 49, 49, 49, 49,
-        49, 49, 49, 49, 49, 49, 49, 54, 49, 49,
-        49, 49, 35, 37, 49, 50, 50, 54, 54, 49,
-        49, 49, 41, 11, 21, 37, 50, 50, 54, 52,
-        49, 49, 49, 17, 1, 3, 21, 21, 21, 21,
-        49, 49, 50, 17, 1, 1, 1, 1, 1, 1,
-        49, 49, 50, 17, 1, 1, 1, 1, 1, 1,
-        49, 49, 50, 17, 1, 1, 1, 1, 1, 1,
-        49, 49, 50, 17, 1, 1, 1, 1, 1, 1,
-        49, 49, 50, 17, 1, 1, 1, 1, 1, 1
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 1, 3, 3, 3, 1,
+        1, 1, 1, 1, 1, 2, 3, 3, 3, 1,
+        1, 1, 1, 1, 1, 3, 3, 3, 3, 1,
+        1, 1, 1, 1, 1, 3, 3, 3, 3, 1,
+        1, 1, 2, 1, 1, 3, 3, 1, 1, 1,
+        1, 1, 2, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 2, 1, 1, 1, 41, 27, 43, 1,
+        1, 1, 2, 1, 1, 41, 8, 7, 9, 43,
+        1, 1, 2, 1, 41, 8, 7, 7, 7, 9
+      }
+    },
+    {
+      type = "tilelayer",
+      name = "Tile Layer 2",
+      x = 0,
+      y = 0,
+      width = 10,
+      height = 10,
+      visible = true,
+      opacity = 1,
+      offsetx = 0,
+      offsety = 0,
+      properties = {},
+      encoding = "lua",
+      data = {
+        0, 0, 0, 0, 0, 0, 55, 56, 56, 57,
+        0, 0, 0, 0, 0, 0, 58, 58, 58, 58,
+        0, 0, 0, 0, 0, 0, 61, 61, 62, 62,
+        0, 0, 0, 0, 0, 0, 64, 65, 65, 66,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+      }
+    },
+    {
+      type = "objectgroup",
+      name = "Object Layer 1",
+      visible = true,
+      opacity = 1,
+      offsetx = 0,
+      offsety = 0,
+      draworder = "topdown",
+      properties = {},
+      objects = {
+        {
+          id = 2,
+          name = "player",
+          type = "",
+          shape = "rectangle",
+          x = 32,
+          y = 192,
+          width = 32,
+          height = 32,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        }
       }
     }
   }

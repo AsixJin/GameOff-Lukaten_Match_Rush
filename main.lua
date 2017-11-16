@@ -1,18 +1,20 @@
 -- Imports
 local sti = require "libs/sti" --Simple Tiled Implementation
 local dialogManager = require "libs/dialogmanager" --Asix Dialog Manager
+local mapManager = require "libs/mapmanager" --Asix Map Manager
 
 function love.load()
-    -- Load map file
-    map = sti("maps/debug.lua")
-    -- Load dialog manager
-    dialogManager.load()
+    -- Get a Tiled map and load it into
+    -- the Map Manager.
+    map = sti("maps/debug.lua", { "box2d" })
+    mapManager.load(map)
 
+    -- Load Dialog Manager
+    dialogManager.load()
 end
 
 function love.update(dt)
-    -- Update Map
-    map:update(dt)
+   mapManager.update(dt)
 
     --Testing Display
     if love.keyboard.isDown("a") then
@@ -23,9 +25,8 @@ function love.update(dt)
 end
 
 function love.draw()
-    -- Draw Map
-    map:draw()
+    mapManager.draw()
 
-    -- Draw whatever the Dialog Manager needs to draw
+    -- Draw the dialogue box & relevant text
     dialogManager.draw()
 end
