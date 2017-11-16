@@ -9,7 +9,7 @@ local function load(loadedMap)
     world = love.physics.newWorld(0, 0)
     map:box2d_init(world)
 
-    -- Create new dynamic data layer called "Sprites" as the 8th layer
+    -- Create new dynamic data layer called "Sprites" as the 2nd layer
     local layer = map:addCustomLayer("Sprites", 2)
 
     -- Get player spawn object
@@ -26,11 +26,12 @@ local function load(loadedMap)
     layer.player = {
         sprite = sprite,
         x      = player.x,
-        y      = player.y,
-        ox     = sprite:getWidth() / 2,
-        oy     = sprite:getHeight() / 1.35,
-        pBody  = love.physics.newBody(world, player.x, player.y, "dynamic")
+        y      = player.y
     }
+    -- Create Physic Bodies
+    layer.player.pBody  = love.physics.newBody(world, layer.player.x, layer.player.y, "dynamic")
+    layer.player.pRect  = love.physics.newRectangleShape(32, 32)
+    layer.player.pFixture = love.physics.newFixture(layer.player.pBody, layer.player.pRect, 0)
 
     -- Add controls to player
     layer.update = function(self, dt)
@@ -40,25 +41,21 @@ local function load(loadedMap)
         -- Move player up
         if love.keyboard.isDown("w") or love.keyboard.isDown("up") then
             self.player.y = self.player.y - speed * dt
-            self.player.pBody.y = self.player.pBody.y - speed * dt
         end
 
         -- Move player down
         if love.keyboard.isDown("s") or love.keyboard.isDown("down") then
             self.player.y = self.player.y + speed * dt
-            self.player.pBody.y = self.player.pBody.y + speed * dt
         end
 
         -- Move player left
         if love.keyboard.isDown("a") or love.keyboard.isDown("left") then
             self.player.x = self.player.x - speed * dt
-            self.player.pBody.x = self.player.pBody.x - speed * dt
         end
 
         -- Move player right
         if love.keyboard.isDown("d") or love.keyboard.isDown("right") then
             self.player.x = self.player.x + speed * dt
-            self.player.pBody.x = self.player.pBody.x + speed * dt
         end
     end
 
@@ -70,9 +67,7 @@ local function load(loadedMap)
             math.floor(self.player.y),
             0,
             1,
-            1,
-            self.player.ox,
-            self.player.oy
+            1
         )
 
         -- Temporarily draw a point at our location so we know
@@ -95,6 +90,9 @@ end
 local function draw()
     -- Draw Map
     map:draw()
+    -- Draw Box2D physics
+    love.graphics.setColor(255, 0, 0)
+    map:box2d_draw()
 end
 
 return{

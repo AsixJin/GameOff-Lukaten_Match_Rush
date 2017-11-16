@@ -22,6 +22,20 @@ local npcDialogTable = {
 --endregion
 --endregion
 
+--region Dialog Getters
+local function getDebugDialog(index)
+    displayText = debugDialogTable[index]
+end
+
+local function getAreaDialog(index)
+    displayText = areaDialogTable[index]
+end
+
+local function getNPCDialog(index)
+    displayText = npcDialogTable[index]
+end
+--endregion
+
 --region Lifecycle Functions
 local function load()
     -- Load Message Box Image
@@ -34,6 +48,12 @@ local function load()
 end
 
 local function update()
+    --Testing Display
+    if love.keyboard.isDown("1") then
+        getDebugDialog(1)
+    elseif love.keyboard.isDown("2") then
+        getDebugDialog(2)
+    end
 end
 
 local function draw()
@@ -42,20 +62,6 @@ local function draw()
 
     -- Write Current Text
     love.graphics.print(displayText, 20, 335)
-end
---endregion
-
---region Dialog Getters
-local function getDebugDialog(index)
-    displayText = debugDialogTable[index]
-end
-
-local function getAreaDialog(index)
-    displayText = areaDialogTable[index]
-end
-
-local function getNPCDialog(index)
-    displayText = npcDialogTable[index]
 end
 --endregion
 

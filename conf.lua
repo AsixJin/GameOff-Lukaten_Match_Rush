@@ -4,4 +4,5 @@ function love.conf(t)
 
     t.window.title = "Lukaten Chronicles A"
     t.window.borderless = false
+    t.modules.physics = true
 end
