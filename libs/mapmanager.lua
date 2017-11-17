@@ -6,7 +6,7 @@ local function load(loadedMap)
 
     --Setup Physics
     love.physics.setMeter(32)
-    world = love.physics.newWorld(0, 0)
+    world = love.physics.newWorld(0, 0, true)
     map:box2d_init(world)
 
     -- Create new dynamic data layer called "Sprites" as the 2nd layer
@@ -32,6 +32,7 @@ local function load(loadedMap)
     layer.player.pBody  = love.physics.newBody(world, layer.player.x, layer.player.y, "dynamic")
     layer.player.pRect  = love.physics.newRectangleShape(32, 32)
     layer.player.pFixture = love.physics.newFixture(layer.player.pBody, layer.player.pRect, 0)
+    layer.player.pFixture:setRestitution(0.9)
 
     -- Add controls to player
     layer.update = function(self, dt)
