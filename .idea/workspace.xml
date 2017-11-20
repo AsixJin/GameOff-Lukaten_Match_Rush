@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43a03850-b0f6-4e72-924a-5f06e95fce6a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/cameramanager.lua" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/debugmanager.lua" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/gamemanager.lua" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/battlemanager.lua" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/monstermanager.lua" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf.lua" afterPath="$PROJECT_DIR$/conf.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/debugmanager.lua" afterPath="$PROJECT_DIR$/libs/debugmanager.lua" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/dialogmanager.lua" afterPath="$PROJECT_DIR$/libs/dialogmanager.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/mapmanager.lua" afterPath="$PROJECT_DIR$/libs/mapmanager.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/player.lua" afterPath="$PROJECT_DIR$/libs/player.lua" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.lua" afterPath="$PROJECT_DIR$/main.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/maps/debug.lua" afterPath="$PROJECT_DIR$/maps/debug.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tiled/debug.tmx" afterPath="$PROJECT_DIR$/tiled/debug.tmx" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,9 +21,11 @@
       <file leaf-file-name="conf.lua" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conf.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
+            <state relative-caret-position="0">
               <caret line="5" column="31" lean-forward="false" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
-              <folding />
+              <folding>
+                <marker date="1511206393427" expanded="true" signature="21:151" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -36,8 +33,28 @@
       <file leaf-file-name="main.lua" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="88">
+              <caret line="4" column="70" lean-forward="false" selection-start-line="4" selection-start-column="70" selection-end-line="4" selection-end-column="70" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="battlemanager.lua" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/libs/battlemanager.lua">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="19" column="26" lean-forward="true" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="monstermanager.lua" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/libs/monstermanager.lua">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="3" column="24" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -46,18 +63,18 @@
       <file leaf-file-name="debugmanager.lua" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/libs/debugmanager.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="650">
-              <caret line="26" column="44" lean-forward="false" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+            <state relative-caret-position="396">
+              <caret line="18" column="12" lean-forward="false" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gamemanager.lua" pinned="false" current-in-tab="true">
+      <file leaf-file-name="gamemanager.lua" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/libs/gamemanager.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state relative-caret-position="88">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -66,7 +83,7 @@
       <file leaf-file-name="cameramanager.lua" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/libs/cameramanager.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
+            <state relative-caret-position="484">
               <caret line="22" column="17" lean-forward="false" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
               <folding />
             </state>
@@ -76,16 +93,9 @@
       <file leaf-file-name="dialogmanager.lua" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/libs/dialogmanager.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-425">
-              <caret line="1" column="64" lean-forward="false" selection-start-line="1" selection-start-column="64" selection-end-line="1" selection-end-column="64" />
-              <folding>
-                <element signature="e#166#186#0" expanded="false" />
-                <element signature="e#187#208#0" expanded="false" />
-                <element signature="e#346#366#0" expanded="false" />
-                <element signature="e#409#428#0" expanded="false" />
-                <element signature="n#draw#0" expanded="false" />
-                <marker date="1511157511037" expanded="true" signature="482:491" ph="Lifecycle Functions" />
-              </folding>
+            <state relative-caret-position="431">
+              <caret line="39" column="22" lean-forward="false" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -93,8 +103,8 @@
       <file leaf-file-name="player.lua" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/libs/player.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="20" column="27" lean-forward="false" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+            <state relative-caret-position="880">
+              <caret line="40" column="13" lean-forward="false" selection-start-line="33" selection-start-column="4" selection-end-line="42" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -122,19 +132,22 @@
         <option value="$PROJECT_DIR$/libs/sti/init.lua" />
         <option value="$PROJECT_DIR$/libs/mapmanager.lua" />
         <option value="$PROJECT_DIR$/libs/cameramanager.lua" />
-        <option value="$PROJECT_DIR$/libs/dialogmanager.lua" />
         <option value="$PROJECT_DIR$/conf.lua" />
-        <option value="$PROJECT_DIR$/libs/debugmanager.lua" />
         <option value="$PROJECT_DIR$/libs/player.lua" />
-        <option value="$PROJECT_DIR$/main.lua" />
         <option value="$PROJECT_DIR$/libs/gamemanager.lua" />
+        <option value="$PROJECT_DIR$/libs/debugmanager.lua" />
+        <option value="$PROJECT_DIR$/libs/dialogmanager.lua" />
+        <option value="$PROJECT_DIR$/main.lua" />
+        <option value="$PROJECT_DIR$/libs/battlemanager.lua" />
+        <option value="$PROJECT_DIR$/libs/monstermanager.lua" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
+    <option name="x" value="2537" />
+    <option name="y" value="-27" />
     <option name="width" value="976" />
-    <option name="height" value="1088" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -152,39 +165,35 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="TinyMystic A" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TinyMystic A" type="462c0819:PsiDirectoryNode" />
+              <item name="LukatenA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LukatenA" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="TinyMystic A" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TinyMystic A" type="462c0819:PsiDirectoryNode" />
-              <item name="libs" type="462c0819:PsiDirectoryNode" />
+              <item name="LukatenA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LukatenA" type="462c0819:PsiDirectoryNode" />
+              <item name="graphics" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="TinyMystic A" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TinyMystic A" type="462c0819:PsiDirectoryNode" />
-              <item name="libs" type="462c0819:PsiDirectoryNode" />
-              <item name="sti" type="462c0819:PsiDirectoryNode" />
+              <item name="LukatenA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LukatenA" type="462c0819:PsiDirectoryNode" />
+              <item name="graphics" type="462c0819:PsiDirectoryNode" />
+              <item name="monster" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="TinyMystic A" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TinyMystic A" type="462c0819:PsiDirectoryNode" />
+              <item name="LukatenA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LukatenA" type="462c0819:PsiDirectoryNode" />
               <item name="maps" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TinyMystic A" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -314,15 +323,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
+    <frame x="1912" y="-16" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33054394" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.123958334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -330,8 +339,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -354,7 +363,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="4" column="43" lean-forward="false" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
-          <folding />
+          <folding>
+            <marker date="1511206393427" expanded="true" signature="21:151" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -370,14 +381,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="e#166#186#0" expanded="false" />
-            <element signature="e#187#208#0" expanded="false" />
-            <element signature="e#346#366#0" expanded="false" />
-            <element signature="e#409#428#0" expanded="false" />
-            <element signature="n#draw#0" expanded="false" />
-            <marker date="1511157511037" expanded="true" signature="482:491" ph="Lifecycle Functions" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -409,7 +413,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="4" column="42" lean-forward="false" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
-          <folding />
+          <folding>
+            <marker date="1511206393427" expanded="true" signature="21:151" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -417,14 +423,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="e#166#186#0" expanded="false" />
-            <element signature="e#187#208#0" expanded="false" />
-            <element signature="e#346#366#0" expanded="false" />
-            <element signature="e#409#428#0" expanded="false" />
-            <element signature="n#draw#0" expanded="false" />
-            <marker date="1511157511037" expanded="true" signature="482:491" ph="Lifecycle Functions" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -448,7 +447,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="4" column="42" lean-forward="false" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
-          <folding />
+          <folding>
+            <marker date="1511206393427" expanded="true" signature="21:151" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -456,14 +457,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="e#166#186#0" expanded="false" />
-            <element signature="e#187#208#0" expanded="false" />
-            <element signature="e#346#366#0" expanded="false" />
-            <element signature="e#409#428#0" expanded="false" />
-            <element signature="n#draw#0" expanded="false" />
-            <marker date="1511157511037" expanded="true" signature="482:491" ph="Lifecycle Functions" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -487,7 +481,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="4" column="42" lean-forward="false" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
-          <folding />
+          <folding>
+            <marker date="1511206393427" expanded="true" signature="21:151" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -503,7 +499,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1511206393427" expanded="true" signature="21:151" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -519,7 +517,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="4" column="42" lean-forward="false" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
-          <folding />
+          <folding>
+            <marker date="1511206393427" expanded="true" signature="21:151" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -542,14 +542,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="e#166#186#0" expanded="false" />
-            <element signature="e#187#208#0" expanded="false" />
-            <element signature="e#346#366#0" expanded="false" />
-            <element signature="e#409#428#0" expanded="false" />
-            <element signature="n#draw#0" expanded="false" />
-            <marker date="1511157511037" expanded="true" signature="482:491" ph="Lifecycle Functions" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -573,7 +566,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="4" column="42" lean-forward="false" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
-          <folding />
+          <folding>
+            <marker date="1511206393427" expanded="true" signature="21:151" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -581,14 +576,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="e#166#186#0" expanded="false" />
-            <element signature="e#187#208#0" expanded="false" />
-            <element signature="e#346#366#0" expanded="false" />
-            <element signature="e#409#428#0" expanded="false" />
-            <element signature="n#draw#0" expanded="false" />
-            <marker date="1511157511037" expanded="true" signature="482:491" ph="Lifecycle Functions" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -612,7 +600,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="4" column="42" lean-forward="false" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
-          <folding />
+          <folding>
+            <marker date="1511206393427" expanded="true" signature="21:151" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -620,14 +610,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="e#166#186#0" expanded="false" />
-            <element signature="e#187#208#0" expanded="false" />
-            <element signature="e#346#366#0" expanded="false" />
-            <element signature="e#409#428#0" expanded="false" />
-            <element signature="n#draw#0" expanded="false" />
-            <marker date="1511157511037" expanded="true" signature="482:491" ph="Lifecycle Functions" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -651,7 +634,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="4" column="42" lean-forward="false" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
-          <folding />
+          <folding>
+            <marker date="1511206393427" expanded="true" signature="21:151" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -667,7 +652,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1511206393427" expanded="true" signature="21:151" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -694,22 +681,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/maps/debug.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libs/Camera.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/Camera.lua" />
     <entry file="file://$PROJECT_DIR$/libs/sti/init.lua">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
@@ -728,15 +700,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/conf.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
+        <state relative-caret-position="0">
           <caret line="5" column="31" lean-forward="false" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+          <folding>
+            <marker date="1511206393427" expanded="true" signature="21:151" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/maps/debug.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#254#8097#0" expanded="false" />
+            <element signature="e#8110#9298#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/player.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="880">
+          <caret line="40" column="13" lean-forward="false" selection-start-line="33" selection-start-column="4" selection-end-line="42" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/debugmanager.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="12" lean-forward="false" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/libs/cameramanager.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
+        <state relative-caret-position="484">
           <caret line="22" column="17" lean-forward="false" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
           <folding />
         </state>
@@ -744,47 +745,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/libs/dialogmanager.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-425">
-          <caret line="1" column="64" lean-forward="false" selection-start-line="1" selection-start-column="64" selection-end-line="1" selection-end-column="64" />
-          <folding>
-            <element signature="e#166#186#0" expanded="false" />
-            <element signature="e#187#208#0" expanded="false" />
-            <element signature="e#346#366#0" expanded="false" />
-            <element signature="e#409#428#0" expanded="false" />
-            <element signature="n#draw#0" expanded="false" />
-            <marker date="1511157511037" expanded="true" signature="482:491" ph="Lifecycle Functions" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libs/player.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="20" column="27" lean-forward="false" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libs/debugmanager.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="26" column="44" lean-forward="false" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="431">
+          <caret line="39" column="22" lean-forward="false" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/libs/gamemanager.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state relative-caret-position="88">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/battlemanager.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" column="26" lean-forward="true" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="70" lean-forward="false" selection-start-line="4" selection-start-column="70" selection-end-line="4" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/monstermanager.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="24" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
           <folding />
         </state>
       </provider>

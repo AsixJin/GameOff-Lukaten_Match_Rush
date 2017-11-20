@@ -5,7 +5,8 @@ local displayText = "Lukaten Match Rush\nPress 'Enter' to start!" --Whatever the
 --region Debug Dialog
 local debugDialogTable = {
     "This is text from the dialog manager",
-    "I am Asix Jin and this is my dialog\nmanager"
+    "I am Asix Jin and this is my dialog\nmanager",
+    "This is to test controls in battle\nmanager"
 }
 --endregion
 
@@ -33,6 +34,10 @@ end
 
 local function getNPCDialog(index)
     displayText = npcDialogTable[index]
+end
+
+local function setDisplayText(text)
+    displayText = text
 end
 --endregion
 

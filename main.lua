@@ -1,12 +1,12 @@
 -- Imports
 Camera = require "libs/Camera" -- STALKER-X Camera Library
 gCam = require "libs/cameramanager" -- Asix Camera Manager (Uses STALKER-X)
+battleManager = require "libs/battlemanager" --Asix Battle Manager
+monsterManager = require "libs/monstermanager" -- Asix Monster Manager
 dialogManager = require "libs/dialogmanager" --Asix Dialog Manager
 player = require "libs/player" -- Player Script
 gManager = require "libs/gamemanager" -- Game Manager
 dManager = require "libs/debugmanager" -- Debug Manager
-
-
 
 local boardSprite
 local backdropSprite
@@ -55,4 +55,9 @@ function love.draw()
     player.draw()
     -- After Draw for the Game Camera
     gCam.aDraw()
+end
+
+function love.keypressed(key)
+    dManager.keypress(key)
+    battleManager.keypress(key)
 end
