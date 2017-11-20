@@ -1,5 +1,5 @@
 local msgBox --The graphics of the message box
-local displayText = "Debug Area 1-1" --Whatever the message should be showing in the box
+local displayText = "Lukaten Match Rush\nPress 'Enter' to start!" --Whatever the message should be showing in the box
 
 --region Text Tables
 --region Debug Dialog
@@ -48,12 +48,7 @@ local function load()
 end
 
 local function update()
-    --Testing Display
-    if love.keyboard.isDown("1") then
-        getDebugDialog(1)
-    elseif love.keyboard.isDown("2") then
-        getDebugDialog(2)
-    end
+
 end
 
 local function draw()
