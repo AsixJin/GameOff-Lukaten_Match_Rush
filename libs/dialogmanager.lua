@@ -1,5 +1,5 @@
 local msgBox --The graphics of the message box
-local displayText = "Lukaten Match Rush\nPress 'Enter' to start!" --Whatever the message should be showing in the box
+local displayText = "This is a dialog box" --Whatever the message should be showing in the box
 
 --region Text Tables
 --region Debug Dialog
@@ -59,11 +59,10 @@ end
 local function draw()
     -- Draw Message Box
     love.graphics.draw(msgBox, 0, 320)
-
     -- Write Current Text
     love.graphics.print(displayText, 20, 335)
     -- Write Player's Health
-    love.graphics.print("Roku's HP: "..player.getHP().."   Space 1 / 30", 20, 390)
+    love.graphics.print("Roku's HP: "..player.getHP().."   Space "..player.getBP() .." / 29", 20, 390)
 
 end
 --endregion

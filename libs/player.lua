@@ -58,13 +58,21 @@ end
 local function modifyHealth(operation, num)
     if operation then
         health = health + num
+        if health >= 50 then
+            health = 50
+        end
     else
         health = health - num
+        if health <= 0 then
+            health = 0
+        end
     end
 end
 
 local function setHealth(num)
-    health = num
+    if num >= 0 or num <= 50 then
+        health = num
+    end
 end
 
 local function getHealth()
@@ -72,25 +80,45 @@ local function getHealth()
 end
 
 local function addBPos(pos)
-    if boardPos < 29 then
-        boardPos = boardPos + pos
+    local tPos = boardPos + pos
+    local didMove = true
+    if tPos <= 29 then
+        boardPos = tPos
     else
-        boardPos = 1
+        didMove = false
     end
+    return didMove
+end
+
+local function removePos(pos)
+    local tPos = boardPos - pos
+    local didMove = true
+    if tPos >= 0 then
+        boardPos = tPos
+    else
+        didMove = false
+    end
+    return didMove
 end
 
 local function setBPos(pos)
     boardPos = pos
 end
 
+local function getBoardPosition()
+    return boardPos
+end
+
 return{
     x = getX,
     y = getY,
     move = addBPos,
+    back = removePos,
     set = setBPos,
     getHP = getHealth,
     setHP = setHealth,
     modHP = modifyHealth,
+    getBP = getBoardPosition,
     load = load,
     update = update,
     draw = draw

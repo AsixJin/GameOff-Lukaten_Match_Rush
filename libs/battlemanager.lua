@@ -43,6 +43,8 @@ local function resetBattleManager()
 end
 
 local function startBattle(monster)
+    -- Reset Manager
+    resetBattleManager()
     -- Change the Game State to Battle
     gManager.changeState(BATTLE_STATE)
     -- Change the Battle State to Start
@@ -187,7 +189,7 @@ local function keypressed(key)
         elseif battleState == B_LOSE_STATE then
             if key == "a" then
                 -- Restart the game
-                love.event.quit( "restart" )
+                love.event.quit("restart")
             end
         end
     end
