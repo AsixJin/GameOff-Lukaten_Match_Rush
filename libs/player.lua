@@ -8,6 +8,8 @@ local scale = 1;
 local offsetX = 0
 local offsetY = 15
 
+local health = 50
+
 local function load()
     local sprite = love.graphics.newImage("graphics/testman.png")
     player = {
@@ -51,6 +53,24 @@ local function getY()
     return player.y
 end
 
+-- True to add
+-- False to subtract
+local function modifyHealth(operation, num)
+    if operation then
+        health = health + num
+    else
+        health = health - num
+    end
+end
+
+local function setHealth(num)
+    health = num
+end
+
+local function getHealth()
+    return health
+end
+
 local function addBPos(pos)
     if boardPos < 29 then
         boardPos = boardPos + pos
@@ -68,6 +88,9 @@ return{
     y = getY,
     move = addBPos,
     set = setBPos,
+    getHP = getHealth,
+    setHP = setHealth,
+    modHP = modifyHealth,
     load = load,
     update = update,
     draw = draw

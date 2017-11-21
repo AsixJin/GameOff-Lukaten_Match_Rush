@@ -62,6 +62,8 @@ local function draw()
 
     -- Write Current Text
     love.graphics.print(displayText, 20, 335)
+    -- Write Player's Health
+    love.graphics.print("Roku's HP: "..player.getHP(), 20, 390)
 end
 --endregion
 
@@ -70,6 +72,7 @@ return {
     getDDialog = getDebugDialog;
     getADialog = getAreaDialog;
     getNDialog = getNPCDialog;
+    setText = setDisplayText,
     --Lifecycles
     load = load;
     update = update;

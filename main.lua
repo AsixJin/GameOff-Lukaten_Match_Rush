@@ -35,6 +35,10 @@ function love.update(dt)
     player.update(dt, gManager.getState())
     -- Update Camera
     gCam.update(dt, player.x(), player.y())
+    -- If in battle, use battle manager update
+    if gManager.getState() == BATTLE_STATE then
+        battleManager.update(dt)
+    end
 end
 
 function love.draw()
@@ -44,10 +48,14 @@ function love.draw()
     dialogManager.draw()
     -- Draw Game Board
     love.graphics.draw(backdropSprite, 0, 0)
+    -- If in battle state draw battle manager
+    if gManager.getState() == BATTLE_STATE then
+        battleManager.draw()
+    end
     -- Before Draw for the Game Camera
     gCam.bDraw()
     -- If on Board State
-    if(gManager.getState() == BOARD_STATE) then
+    if gManager.getState() == BOARD_STATE then
         -- Draw Game Board
         love.graphics.draw(boardSprite, 0, 0)
     end

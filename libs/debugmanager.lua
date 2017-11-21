@@ -23,9 +23,7 @@ local function keypressed(key)
 
         if key == "3" then
             if gManager.getState() == BOARD_STATE then
-                gManager.changeState(BATTLE_STATE)
-            else
-                gManager.changeState(BOARD_STATE)
+                battleManager.startBattle(monsterManager.get(3))
             end
         end
 
