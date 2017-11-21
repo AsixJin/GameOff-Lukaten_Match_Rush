@@ -63,7 +63,8 @@ local function draw()
     -- Write Current Text
     love.graphics.print(displayText, 20, 335)
     -- Write Player's Health
-    love.graphics.print("Roku's HP: "..player.getHP(), 20, 390)
+    love.graphics.print("Roku's HP: "..player.getHP().."   Space 1 / 30", 20, 390)
+
 end
 --endregion
 
