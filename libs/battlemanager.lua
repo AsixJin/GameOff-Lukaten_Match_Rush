@@ -11,6 +11,7 @@ B_CHECK_STATE = 2
 B_WIN_STATE = 3
 B_LOSE_STATE = 4
 B_DAMAGE_STATE = 5
+B_FINAL_STATE = 6
 
 local battleState = B_INTRO_STATE
 
@@ -22,6 +23,7 @@ local monsterCombo = {}
 local guessCombo = {}
 local playerCombo = {}
 local winCheck
+local isFinal
 
 local function generateCombo(maxCombo)
     for i=1,maxCombo do
@@ -53,6 +55,8 @@ local function startBattle(monster)
     monsterSprite = love.graphics.newImage(monster[2])
     -- Randomize Monster's Combo
     generateCombo(monster[3])
+    -- Get the final boss flag
+    isFinal = monster[4]
     -- Display Start Text
     dialogManager.setText(monsterName.."\nhas challenge you to battle")
 end
@@ -181,10 +185,20 @@ local function keypressed(key)
                     loseBattle()
                 end
             end
-        elseif battleState == B_WIN_STATE then
+        elseif battleState == B_WIN_STATE and not isFinal then
             if key == "a" then
                 gManager.changeState(BOARD_STATE)
                 resetBattleManager()
+            end
+        elseif battleState == B_WIN_STATE and isFinal then
+            if key == "a" then
+                dialogManager.setText("You have beaten the game.\nPress 'A' to restart")
+                battleState = B_FINAL_STATE
+            end
+        elseif battleState == B_FINAL_STATE then
+            if key == "a" then
+                -- Restart the game
+                love.event.quit("restart")
             end
         elseif battleState == B_LOSE_STATE then
             if key == "a" then

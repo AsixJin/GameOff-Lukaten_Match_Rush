@@ -1,9 +1,14 @@
 local pathToMonsters = "graphics/monster/"
 local monsterTable = {
-    {"Name", "Path to Sprite", "Max Combo"},
-    {"Testman Lv.1", pathToMonsters.."testman"..".png", 3},
-    {"Testman Lv.2", pathToMonsters.."testman"..".png", 6},
-    {"Testman Lv.3", pathToMonsters.."testman"..".png", 10}
+    {"Slime", pathToMonsters.."slime"..".png", 2, false},
+    {"Bee", pathToMonsters.."bee"..".png", 3, false},
+    {"Thief", pathToMonsters.."thiefN"..".png", 5, false},
+    {"Thief", pathToMonsters.."thiefF"..".png", 5, false},
+    
+
+    {"Golem", pathToMonsters.."golem"..".png", 10, false},
+    {"Testman", pathToMonsters.."testman"..".png", 3, false},
+    {"Name", "Path to Sprite", "Max Combo", "Bool-Is it a boss"} --This is an example
 }
 
 local function getMonster(index)

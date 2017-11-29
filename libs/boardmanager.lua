@@ -26,34 +26,37 @@ end
 
 local function rollAction()
     local actionRoll = love.math.random(1, 4)
-
     boardState = BR_ACTION_STATE
 
-    if actionRoll == BR_ACTION_BATTLE then
-        battleManager.startBattle(monsterManager.get(2))
-        boardState = BR_ROLL_STATE
-    elseif actionRoll == BR_ACTION_MOVE then
-        local forward = love.math.random(1, 2)
-        local movement = love.math.random(1, 6)
-        if forward == 1 then
-            player.move(movement)
-            dialogManager.setText("Roku goes forward\n"..movement.." spaces!")
+    if player.getBP() ~= 29 then
+        if actionRoll == BR_ACTION_BATTLE then
+            battleManager.startBattle(monsterManager.get(2))
+            boardState = BR_ROLL_STATE
+        elseif actionRoll == BR_ACTION_MOVE then
+            local forward = love.math.random(1, 2) -- Are you moving forward or back
+            local movement = love.math.random(1, 6) -- How are
+            if forward == 1 then
+                player.move(movement)
+                dialogManager.setText("Roku goes forward\n"..movement.." spaces!")
+            else
+                player.back(movement)
+                dialogManager.setText("Roku goes back\n"..movement.." spaces!")
+            end
+        elseif actionRoll == BR_ACTION_HP then
+            local gain = love.math.random(1, 2) -- Are you losing or gaining health
+            local amount = love.math.random(1, 6) --How much are you
+            if gain == 1 then
+                player.modHP(true, amount)
+                dialogManager.setText("Roku gains\n"..amount.." health!")
+            else
+                player.modHP(false, amount)
+                dialogManager.setText("Roku loses\n"..amount.." health!")
+            end
         else
-            player.back(movement)
-            dialogManager.setText("Roku goes back\n"..movement.." spaces!")
-        end
-    elseif actionRoll == BR_ACTION_HP then
-        local gain = love.math.random(1, 2)
-        local amount = love.math.random(1, 6)
-        if gain == 1 then
-            player.modHP(true, amount)
-            dialogManager.setText("Roku gains\n"..amount.." health!")
-        else
-            player.modHP(false, amount)
-            dialogManager.setText("Roku loses\n"..amount.." health!")
+            dialogManager.setText("Roku did nothing...")
         end
     else
-        dialogManager.setText("Roku did nothing...")
+        battleManager.startBattle(monsterManager.get(3))
     end
 
 end

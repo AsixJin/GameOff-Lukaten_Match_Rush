@@ -23,7 +23,7 @@ function love.load()
     -- Load the Dialogue Manager
     dialogManager.load()
     -- Init Debug Manager
-    dManager.load(true)
+    dManager.load(false)
 end
 
 function love.update(dt)
