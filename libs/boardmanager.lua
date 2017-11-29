@@ -4,9 +4,9 @@ BR_ROLL_STATE = 1
 BR_MOVE_STATE = 2
 BR_ACTION_STATE = 3
 
-BR_ACTION_BATTLE = 1
-BR_ACTION_MOVE = 2
-BR_ACTION_HP = 3
+BR_ACTION_BATTLE = 40
+BR_ACTION_MOVE = 70
+BR_ACTION_HP = 85
 
 local boardState = BR_START_STATE
 local boardSprite
@@ -25,14 +25,14 @@ local function rollDie()
 end
 
 local function rollAction()
-    local actionRoll = love.math.random(1, 4)
+    local actionRoll = love.math.random(1, 100)
     boardState = BR_ACTION_STATE
 
-    if player.getBP() ~= 29 then
-        if actionRoll == BR_ACTION_BATTLE then
-            battleManager.startBattle(monsterManager.get(2))
+    if player.getBP() ~= 30 then
+        if actionRoll <= BR_ACTION_BATTLE then
+            battleManager.startBattle(monsterManager.get(love.math.random(1, 13)))
             boardState = BR_ROLL_STATE
-        elseif actionRoll == BR_ACTION_MOVE then
+        elseif actionRoll <= BR_ACTION_MOVE then
             local forward = love.math.random(1, 2) -- Are you moving forward or back
             local movement = love.math.random(1, 6) -- How are
             if forward == 1 then
@@ -42,7 +42,7 @@ local function rollAction()
                 player.back(movement)
                 dialogManager.setText("Roku goes back\n"..movement.." spaces!")
             end
-        elseif actionRoll == BR_ACTION_HP then
+        elseif actionRoll <= BR_ACTION_HP then
             local gain = love.math.random(1, 2) -- Are you losing or gaining health
             local amount = love.math.random(1, 6) --How much are you
             if gain == 1 then
@@ -56,7 +56,7 @@ local function rollAction()
             dialogManager.setText("Roku did nothing...")
         end
     else
-        battleManager.startBattle(monsterManager.get(3))
+        battleManager.startBattle(monsterManager.get(14))
     end
 
 end

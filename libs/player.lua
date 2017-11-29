@@ -82,7 +82,7 @@ end
 local function addBPos(pos)
     local tPos = boardPos + pos
     local didMove = true
-    if tPos <= 29 then
+    if tPos <= 30 then
         boardPos = tPos
     else
         didMove = false
