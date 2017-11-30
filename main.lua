@@ -1,10 +1,14 @@
+-- Version 1.0
+
 -- Imports
-Camera = require "libs/Camera" -- STALKER-X Camera Library
+Camera = require "libs/Camera" -- STALKER-X Camera
+ripple = require 'libs/ripple'
 gCam = require "libs/cameramanager" -- Asix Camera Manager (Uses STALKER-X)
 battleManager = require "libs/battlemanager" --Asix Battle Manager
 boardManager = require "libs/boardmanager" -- Asix Board Manager
 monsterManager = require "libs/monstermanager" -- Asix Monster Manager
 dialogManager = require "libs/dialogmanager" --Asix Dialog Manager
+musicManager = require "libs/musicManager" --Asix Music Manager
 player = require "libs/player" -- Player Script
 gManager = require "libs/gamemanager" -- Game Manager
 dManager = require "libs/debugmanager" -- Debug Manager
@@ -20,6 +24,8 @@ function love.load()
     gCam.load(Camera(160.5, 160.5, 320, 320))
     -- Load the player
     player.load()
+    -- Load Music Manager
+    musicManager.load()
     -- Load the Dialogue Manager
     dialogManager.load()
     -- Init Debug Manager
@@ -35,6 +41,8 @@ function love.update(dt)
     player.update(dt, gManager.getState())
     -- Update Camera
     gCam.update(dt, player.x(), player.y())
+    -- Update Music
+    musicManager.update(dt)
     -- If on board, use board manager update
     if gManager.getState() == BOARD_STATE then
         boardManager.update(dt)

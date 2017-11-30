@@ -57,6 +57,12 @@ local function startBattle(monster)
     generateCombo(monster[3])
     -- Get the final boss flag
     isFinal = monster[4]
+    --Play Battle Music
+    if isFinal then
+        musicManager.playBoss()
+    else
+        musicManager.playBattle()
+    end
     -- Display Start Text
     dialogManager.setText(monsterName.."\nhas challenge you to battle")
 end
@@ -188,11 +194,13 @@ local function keypressed(key)
         elseif battleState == B_WIN_STATE and not isFinal then
             if key == "a" then
                 gManager.changeState(BOARD_STATE)
+                musicManager.playBoard()
                 resetBattleManager()
             end
         elseif battleState == B_WIN_STATE and isFinal then
             if key == "a" then
                 dialogManager.setText("You have beaten the game.\nPress 'A' to restart")
+                musicManager.playVictory()
                 battleState = B_FINAL_STATE
             end
         elseif battleState == B_FINAL_STATE then
